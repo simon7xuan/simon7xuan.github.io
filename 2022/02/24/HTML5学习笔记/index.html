@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2022 | Silvia&#39;s blog</title>
+  <title>HTML5学习笔记 | Silvia&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Silvia&#39;s blog">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+  <meta name="description" content="pink老师的前端教程笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5学习笔记">
+<meta property="og:url" content="http://example.com/2022/02/24/HTML5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Silvia&#39;s blog">
+<meta property="og:description" content="pink老师的前端教程笔记">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-02-24T11:01:01.000Z">
+<meta property="article:modified_time" content="2022-02-25T06:09:03.134Z">
 <meta property="article:author" content="Silvia_s">
+<meta property="article:tag" content="HTML5">
+<meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Silvia&#39;s blog" type="application/atom+xml">
@@ -153,35 +159,200 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-HTML5学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/02/24/HTML5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2022-02-24T11:01:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-24</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/02/24/HTML5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">HTML5学习笔记</a>
+    <h1 class="article-title" itemprop="name">
+      HTML5学习笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2022/02/24/HTML5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2022-02-24T11:01:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>pink老师的前端教程笔记</p>
+<span id="more"></span>
+
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ul>
+<li>浏览器内核（渲染引擎）：读取网页内容，整理信息，计算网页显示方式并显示页面，如Webkit&#x2F;Blink</li>
+<li>web标准的构成：结构、表现、行为</li>
+</ul>
+<p>结构：对网页元素进行分类（HTML）</p>
+<p>表现：设置网页元素的外观样式（CSS）</p>
+<p>行为：网页模型的交互（JS）</p>
+<h2 id="HTML语法规范"><a href="#HTML语法规范" class="headerlink" title="HTML语法规范"></a>HTML语法规范</h2><ul>
+<li>所有标签包括在尖括号中，大部分标签是成对出现的（双标签&#x2F;单标签），结束标签前面有&#x2F;</li>
+<li>双标签关系：包含关系、并列关系</li>
+</ul>
+<h3 id="HTML基本结构标签（骨架标签）"><a href="#HTML基本结构标签（骨架标签）" class="headerlink" title="HTML基本结构标签（骨架标签）"></a>HTML基本结构标签（骨架标签）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;		//文档类型声明标签</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;	//定义当前文档显示的语言（en/zh-CN）</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;	//字符集</span><br></pre></td></tr></table></figure>
+
+<h2 id="vscode使用"><a href="#vscode使用" class="headerlink" title="vscode使用"></a>vscode使用</h2><ul>
+<li>新建html文件后输入！后回车即可自动生成html基本骨架</li>
+<li>‘ctrl’+‘+’可以加大代码字体大小（和‘-’则缩小），ctrl+n新建文件，ctrl+s保存文件</li>
+<li>插件安装：open in browser&#x2F;auto rename tag</li>
+</ul>
+<h2 id="HTML常用标签"><a href="#HTML常用标签" class="headerlink" title="HTML常用标签"></a>HTML常用标签</h2><h3 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签"></a>标题标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;-&lt;h6&gt;标题标签</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>每个标题独占一行</li>
+</ul>
+<h3 id="段落标签"><a href="#段落标签" class="headerlink" title="段落标签"></a>段落标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;我是一个段落标签&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>将文字分成一个个段落（会根据浏览器宽度变化自动换行）</li>
+</ul>
+<h3 id="换行标签"><a href="#换行标签" class="headerlink" title="换行标签"></a>换行标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br /&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>break，简单的开启新的一行</li>
+</ul>
+<h3 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;strong&gt;&lt;/strong&gt;*</span><br><span class="line">&lt;b&gt;&lt;/b&gt;		//加粗</span><br><span class="line">&lt;em&gt;&lt;/em&gt;*</span><br><span class="line">&lt;i&gt;&lt;/i&gt;		//倾斜</span><br><span class="line">&lt;del&gt;&lt;/del&gt;*</span><br><span class="line">&lt;s&gt;&lt;/s&gt;		//删除线</span><br><span class="line">&lt;ins&gt;&lt;/ins&gt;*</span><br><span class="line">&lt;u&gt;&lt;/u&gt;		//下划线</span><br></pre></td></tr></table></figure>
+
+<h3 id="盒子"><a href="#盒子" class="headerlink" title="盒子"></a>盒子</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;&lt;/div&gt;		//division分区</span><br><span class="line">&lt;span&gt;&lt;/span&gt;	//跨度</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>div标签用来布局，一个独占一行</li>
+<li>span一行可以放多个（小盒子）</li>
+</ul>
+<h3 id="图像标签"><a href="#图像标签" class="headerlink" title="图像标签"></a>图像标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;URL&quot;/&gt;		//src为必须属性，指定图像文件的路径</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>图片放在和.html文件同级目录下</li>
+<li>alt属性设置替换文本（图像无法显示时）</li>
+<li>title属性-提示文本（鼠标放在图像上的提示文字）</li>
+<li>width&#x2F;height属性设置图像宽度&#x2F;高度</li>
+<li>border属性设置图片边框（一般通过CSS设置）</li>
+<li>属性采取键值对形式，key&#x3D;”value”</li>
+</ul>
+<h4 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h4><ul>
+<li><p>目录文件夹&#x2F;打开目录文件夹第一层称为根目录</p>
+</li>
+<li><p>vscode-打开文件夹进入目录文件夹</p>
+</li>
+</ul>
+<h5 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h5><p>图片相对于html页面的位置</p>
+<ul>
+<li>同级路径</li>
+<li>下一级路径 “&#x2F; “</li>
+<li>上一级路径 “..&#x2F; “</li>
+</ul>
+<h5 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h5><p>从盘符开始，电脑中的位置，使用反斜杠做分隔</p>
+<h3 id="超链接标签"><a href="#超链接标签" class="headerlink" title="超链接标签"></a>超链接标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;跳转目标&quot; target=&quot;目标窗口弹出方式&quot;&gt;文本或图像&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>target属性_self为默认值（在当前窗口打开），blank为在新窗口中打开</li>
+<li>href为必须属性</li>
+<li>外部链接：http:&#x2F;&#x2F;….；内部链接：不需要http；空链接：用#代替；下载链接：地址链接的是.exe或zip压缩包的形式；网页元素链接</li>
+<li>锚点链接：href属性中加#id</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;#id&quot;&gt;&lt;/a&gt;	//链接文本的内容</span><br><span class="line">&lt;p id=&quot;id&quot;&gt;&lt;/p&gt;		//跳转目标位置</span><br></pre></td></tr></table></figure>
+
+<p>用空链接即可点击返回顶部</p>
+<h3 id="注释标签"><a href="#注释标签" class="headerlink" title="注释标签"></a>注释标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- --&gt;	//快捷键：ctrl+/</span><br></pre></td></tr></table></figure>
+
+<h3 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h3><p>&amp;nbsp；显示空格</p>
+<p>&amp;lt；小于号</p>
+<p>&amp;gt；大于号</p>
+<p>更多特殊字符自行百度</p>
+<h3 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h3><p>主要作用：规整的展示数据</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;th&gt;表头内容&lt;/th&gt;		//表头单元格内容会加粗居中显示</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td&gt;单元格内的文字&lt;/td&gt;</span><br><span class="line">		...</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">	...</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>表格属性一般用CSS设置</p>
+</blockquote>
+<ul>
+<li>align 表格相对于周围元素的对齐方式：属性值right&#x2F;center&#x2F;left</li>
+<li>border 表格边框</li>
+<li>cellpadding 单元边沿和内容之间的空白，默认1像素</li>
+<li>cellspacing 单元格之间的空隙</li>
+<li>width&#x2F;height 表格的宽和高</li>
+</ul>
+<h4 id="表格结构标签"><a href="#表格结构标签" class="headerlink" title="表格结构标签"></a>表格结构标签</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;thead&gt;表示表格的头部区域		//&lt;th&gt;是表头单元格</span><br><span class="line">&lt;tbody&gt;表示表格的主体区域</span><br></pre></td></tr></table></figure>
+
+<h4 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h4><ul>
+<li>跨行合并：rowspan&#x3D;”合并单元格的个数”</li>
+<li>跨列合并：colspan&#x3D;”合并单元格的个数”</li>
+<li>找到目标单元格，合并后删除多余的单元格</li>
+</ul>
+<h3 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h3><p>主要作用：用于做布局，分为无序列表，有序列表和自定义列表</p>
+<h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">	&lt;li&gt;列表项&lt;/li&gt;</span><br><span class="line">	...</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>ul标签中只能放li标签，li标签中可以放任何标签</li>
+<li>列表样式属性一般也通过CSS设置</li>
+</ul>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">	&lt;li&gt;有序列表项&lt;/li&gt;</span><br><span class="line">	...</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>ol标签中只能放li标签，li标签中可以放任何标签</li>
+<li>列表样式属性一般也通过CSS设置</li>
+</ul>
+<h4 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h4><p>用于对术语或名词进行解释和描述</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">	&lt;dt&gt;关注我们&lt;/dt&gt;</span><br><span class="line">	&lt;dd&gt;新浪微博&lt;/dd&gt;</span><br><span class="line">	&lt;dd&gt;官方微信&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>dl标签中只能放dt和dd标签，dt和dd里面可以放任何标签</li>
+<li>列表样式属性一般也通过CSS设置</li>
+</ul>
+<h3 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h3><p>用于收集用户信息，一个完整的表单由<strong>表单域、表单控件、提示信息</strong>三部分组成</p>
+<p>表单域<form>会把表单元素信息提交给服务器</form></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=&quot;url&quot; method=&quot;提交方式&quot; name=&quot;表单名称&quot;&gt;</span><br><span class="line">	...</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>action的url是接收并处理表单数据的服务器程序的url</li>
+<li>method设置表单数据的提交方式（get&#x2F;post）</li>
+</ul>
+<h4 id="input输入表单元素"><a href="#input输入表单元素" class="headerlink" title="input输入表单元素"></a>input输入表单元素</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;属性值&quot; /&gt;	//type为必须属性</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>type属性值：[text:文本框, password:密码框, radio:单选按钮, checkbox:复选框, submit:提交按钮, reset:清除表单中所有数据, button:普通按钮（配合js使用）, file:文件域（用于上传文件）,  ]</li>
+<li>name属性给表单元素取名，<strong>单选按钮和复选框必须有相同的名字</strong>，才能实现多选一</li>
+<li>value属性定义表单元素默认值&#x2F;传值（单选按钮和复选框）</li>
+<li>checked属性设置默认选中（单选按钮和复选框）</li>
+<li>maxlength属性设置最大长度值</li>
+</ul>
+<h4 id="label标签"><a href="#label标签" class="headerlink" title="label标签"></a>label标签</h4><blockquote>
+<p>用于绑定一个表单元素，点击label标签内的文本时，浏览器会自动将焦点转到对应的表单元素上</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;label for=&quot;sex&quot;&gt;女&lt;/label&gt;</span><br><span class="line">&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;sex&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>label标签的for属性和相关元素id属性相同</p>
+<h4 id="select下拉表单"><a href="#select下拉表单" class="headerlink" title="select下拉表单"></a>select下拉表单</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">	&lt;option&gt;...&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在option中加属性selected&#x3D;”selected”则设置默认选择</li>
+</ul>
+<h4 id="textarea表单元素"><a href="#textarea表单元素" class="headerlink" title="textarea表单元素"></a>textarea表单元素</h4><p>定义多行文本输入，常见于留言板、评论</p>
+<ul>
+<li>cols属性设置每行中的字符数，rows属性设置显示的行数，实际开发中使用CSS来改变文本域大小</li>
+</ul>
+<h3 id="查阅文档"><a href="#查阅文档" class="headerlink" title="查阅文档"></a>查阅文档</h3><ul>
+<li><p>w3school…</p>
+</li>
+<li><p>MDN…</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -197,164 +368,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150*150&data=https://simon7xuan.github.io/022/02/24/HTML5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/02/23/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/" class="archive-article-date">
-  	<time datetime="2022-02-23T02:15:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2022/02/23/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo使用指南和报错记录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/02/23/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/">hexo使用指南和报错记录</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/02/16/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2022-02-16T06:25:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/02/16/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">markdown学习笔记</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">learn</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/02/15/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2022-02-15T08:29:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/02/15/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/02/15/hello-world/" class="archive-article-date">
-  	<time datetime="2022-02-15T08:19:44.981Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/02/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -377,8 +490,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
